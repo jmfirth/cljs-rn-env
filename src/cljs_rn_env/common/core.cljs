@@ -71,13 +71,3 @@
                       (dispatch [:add-message (create-message "repl" (str (eval (:statement @state))))])
                       (dispatch [:set-statement ""]))}
         "evaluate"]]]]))
-
-
-(defn app-root []
-  (let [view (subscribe [:view])]
-    (fn []
-      (do (aset js/console "disableYellowBox" true)
-          (aset js/console "disableRedBox" true)
-          (cond (= @view "main") [main-view]
-                (= @view "repl") [repl-view]
-                :else [main-view])))))

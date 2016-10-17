@@ -1,10 +1,13 @@
 # cljs-rn-env
 
-A Clojure library designed to ... well, that part is up to you.
+A ClojureScript/React Native playground on your mobile device
 
 ## Usage
 
-FIXME
+* Install Genymotion
+* Create an Android emulator in Genymotion
+* `lein figwheel`
+* `react-native run-android`
 
 ## License
 

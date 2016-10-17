@@ -1,0 +1,18 @@
+(use 'figwheel-sidecar.repl-api)
+(doc start-figwheel!)
+(start-figwheel!)
+(use 'figwheel-sidecar.repl-api)
+(start-figwheel!)
+(cljs-repl)
+(+ 1 1)
+(fig-status)
+:cljs/quit
+(stop-figwheel)
+(start-figwheel!)
+(cljs-repl)
+(dir cljs/user)
+(dir cljs.user)
+(cljs-repl)
+quit
+(use 'figwheel-sidecar/repl-api)
+(use 'figwheel-sidecar.repl-api)
